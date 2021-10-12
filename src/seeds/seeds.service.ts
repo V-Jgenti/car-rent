@@ -32,7 +32,6 @@ export class SeedsService implements OnModuleInit {
       const model: string = faker.vehicle.model();
       const manufacturer: string = faker.vehicle.manufacturer();
       const carNumber = faker.vehicle.vin();
-      console.log(typeof carNumber);
       const values = [`('${model}', '${manufacturer}', '${carNumber}')`];
       await this.dbService.executeQuery(`INSERT INTO 
       cars (manufacturer, model, carnumber) VALUES ${values}`);
