@@ -25,6 +25,7 @@
     "@nestjs/config": "^1.0.2",
     "@nestjs/core": "^7.6.15",
     "@nestjs/platform-express": "^7.6.15",
+    "faker": "^5.5.3",
     "nest-winston": "^1.6.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",

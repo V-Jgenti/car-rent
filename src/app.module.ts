@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { WinstonModule } from 'nest-winston';
 import { level, levels, format, transports } from './logger/index';
 import { DatabaseModule } from './database/database.module';
+import { SeedsModule } from './seeds/seeds.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { DatabaseModule } from './database/database.module';
       transports,
     }),
     DatabaseModule,
+    SeedsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
