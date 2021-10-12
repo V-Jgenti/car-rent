@@ -23,7 +23,7 @@ const databasePoolFactory = async (configService: ConfigService) => {
     },
     DatabaseService,
   ],
-  exports: [],
+  exports: [DatabaseService],
 })
 export class DatabaseModule implements OnApplicationShutdown {
   private readonly logger = new Logger(DatabaseModule.name);
