@@ -6,6 +6,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, { logger: false });
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   app.enableShutdownHooks();
-  await app.listen(process.env.PORT);
+  await app.listen(3300);
 }
 bootstrap();

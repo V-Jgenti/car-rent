@@ -6,6 +6,7 @@ import { WinstonModule } from 'nest-winston';
 import { level, levels, format, transports } from './logger/index';
 import { DatabaseModule } from './database/database.module';
 import { SeedsModule } from './seeds/seeds.module';
+import { RentModule } from './rent/rent.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { SeedsModule } from './seeds/seeds.module';
     }),
     DatabaseModule,
     SeedsModule,
+    RentModule,
   ],
   controllers: [AppController],
   providers: [AppService],
